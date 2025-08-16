@@ -1,0 +1,5 @@
+sudo docker-compose down
+sudo docker system prune -af --volumes
+sudo rm -rf .docker __pycache__
+sudo docker-compose build --no-cache
+sudo docker-compose up -d
